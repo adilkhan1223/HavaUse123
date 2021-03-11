@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310142158092",
+    "project_id": "authentication-c39c1",
+    "storage_bucket": "authentication-c39c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310142158092:android:2b9e157ad6c7d9d6a5f529",
+        "android_client_info": {
+          "package_name": "com.havause"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310142158092-0ho7720jfqdlg42h3c4oto4qraco689l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUlwjY3YNtyq7CWSGYfyb9ME2a_TYnmf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310142158092-0ho7720jfqdlg42h3c4oto4qraco689l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
