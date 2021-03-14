@@ -42,7 +42,7 @@ const data2= [
     },
   ]
 
-const Brownies=()=> {
+const Cookies=()=> {
     return (
         <View >
              <View style={{alignItems:'center', marginHorizontal:wp('2%')}}>
@@ -82,4 +82,4 @@ const styles= StyleSheet.create({
 })
 
 
-export default  Brownies;
+export default  Cookies;

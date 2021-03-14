@@ -42,7 +42,7 @@ const data2= [
     },
   ]
 
-const Brownies=()=> {
+const Weed=()=> {
     return (
         <View >
              <View style={{alignItems:'center', marginHorizontal:wp('2%')}}>
@@ -55,7 +55,7 @@ const Brownies=()=> {
                   <View>
                    <View style={{marginHorizontal:wp('1.5%'),marginVertical:hp('1%')}}> 
                       <View>
-                       <Image source={{uri: item.image}}  style={styles.flatimages4} />
+                       <Image source={{uri: item.image}} style={styles.flatimages4} />
                       </View>
                      <View><Text style={{fontWeight:'bold'}}>{item.title}</Text></View>
                      <View><Text style={{color:'grey', fontWeight:'bold'}}>{item.Price}</Text></View>
@@ -82,4 +82,4 @@ const styles= StyleSheet.create({
 })
 
 
-export default  Brownies;
+export default  Weed;
