@@ -31,31 +31,6 @@ const ENTRIES1 = [
      
   ];
 
-  const ENTRIES1 = [
-    {
-      title: "Professional Modification of racing car Steering Wheel",
-      subtitle: "Lorem ipsum dolor sit amet et nuncat mergitur",
-      illustration: "https://media.istockphoto.com/photos/steering-wheel-picture-id507984911?k=6&m=507984911&s=612x612&w=0&h=Qcr0bGMqXYi2b1rBgjtD8l6eiPXchaSoXS-CjuyHG3E=",
-    },
-    {
-      title: "Professional Modification of racing car Steering Wheel",
-      subtitle: "Lorem ipsum dolor sit amet",
-      illustration: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoPg93EpMK7o6-E708DDMOZhkWFFN3c7l5g&usqp=CAU",
-    },
-    {
-      title: "Professional Modification of racing car Steering Wheel",
-      subtitle: "Lorem ipsum dolor sit amet et nuncat ",
-      illustration: "https://images.pexels.com/photos/3401900/pexels-photo-3401900.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-
-    {
-        title: "Professional Modification of racing car Steering Wheel",
-        subtitle: "Lorem ipsum dolor sit amet et nuncat ",
-        illustration: "https://images.pexels.com/photos/3401900/pexels-photo-3401900.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      },
-     
-  ];
-
 const MenuTab=()=> {
 
     const [items, setItems] = useState([ 
