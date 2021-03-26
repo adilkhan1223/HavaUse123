@@ -3,12 +3,12 @@ import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'rea
 import {  Header, Left, Icon, Center, Right, Body, Item, Input, } from 'native-base';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { Container, Tab, Tabs } from 'native-base';
-import MenuTab from './src/Screens/SellerDetails/MenuTab';
+import MenuTab from './MenuTab';
 
 
 
 
-const App=()=> {
+const SellerDetails=()=> {
   return (
     <ScrollView>
         <Header style={{backgroundColor:'transparent', elevation:0}}>
@@ -170,4 +170,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default App;
+export default SellerDetails;

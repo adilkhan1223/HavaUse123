@@ -1,12 +1,10 @@
 import React,{useState} from 'react';
 import { View, Text, Image, TextInput ,StyleSheet, SafeAreaView, Dimensions, TouchableOpacity ,ScrollView } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp, heightPercentageToDP} from 'react-native-responsive-screen';
-import Button from './src/components/Button'
-import Tab from './src/components/Tab'
-
-
+import Tab from '../components/Tab'
 import { Container,  Header  } from 'native-base';
-import Registration from './src/components/Registration'
+import Registration from '../components/Registration'
+import UserRegistration from '../components/UserRegistration'
 
 
 const height = Dimensions.get('screen').height;
@@ -24,7 +22,7 @@ const width = Dimensions.get('screen').width;
         <Container>
 
        <View  style={styles.logo}>
-          <Image source={require('./issets/Main.png')} />
+          <Image source={require('../../issets/Main.png')} />
           </View>
       
         {/* <Tabs tabBarUnderlineStyle = {{backgroundColor:"transparent"}} tabBarBackgroundColor = "white" tabContainerStyle = {{backgroundColor:"#FFFFFF",borderWidth:1,borderColor:"#3FAD72",height:70,borderBottomWidth:1, borderRadius:20, marginHorizontal:wp('3%')}} >
@@ -52,7 +50,8 @@ const width = Dimensions.get('screen').width;
         }} />
         </View>
        
-        {tab1?    <Registration  /> : <Registration/>}
+        {tab1?    <UserRegistration  /> : <Registration/>}
+
       </Container>
       )
 }

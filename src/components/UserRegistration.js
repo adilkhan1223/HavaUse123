@@ -3,7 +3,7 @@ import { View, Text,  Image, TextInput ,StyleSheet, SafeAreaView, Dimensions, To
 import Button from './Button'
 import {widthPercentageToDP as wp, heightPercentageToDP as hp, heightPercentageToDP} from 'react-native-responsive-screen';
 import { Icon } from 'native-base';
-const Registration =() => {
+const UserRegistration =() => {
     const [password,setPassword] = useState("");
     const [showPass,setShowPass] = useState(true)
     return(
@@ -20,7 +20,7 @@ const Registration =() => {
                             <View style={styles.inputcontent}>
                               <Text style={styles.inputtext}>First Name</Text>
                                 <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
+                                  style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}} 
                                   onChangeText={text => setPassword(text)}
                                   placeholder="Alexander"
                                 />
@@ -32,7 +32,7 @@ const Registration =() => {
                             <View style={styles.inputcontent}>
                               <Text style={styles.inputtext}>Last Name</Text>
                                 <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
+                                  style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
                                   onChangeText={text => setPassword(text)}
                                   placeholder="Ben"
                                 />
@@ -46,9 +46,9 @@ const Registration =() => {
                         <View style={styles.input1}>
 
                             <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}>Business Name</Text>
+                              <Text style={styles.inputtext}>Email</Text>
                                 <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
+                                  style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
                                   onChangeText={text => setPassword(text)}
                                   placeholder="email@email.com"
                                 />
@@ -77,88 +77,15 @@ const Registration =() => {
                             
                          </View>
 
-                         <View style={styles.infotext}>
-                               <Text style={{fontSize:17, color:'grey'}}>Personal Information</Text>                          
-                         </View>
-
-                         <View style={styles.input1}>
-
-                            <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}> Country</Text>
-                                <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
-                                  onChangeText={text => setPassword(text)}
-                                  placeholder="Brazil"
-                                />
-                            </View>              
-                        </View>
-
-                        <View style={styles.input1}>
-
-                            <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}>City</Text>
-                                <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
-                                  onChangeText={text => setPassword(text)}
-                                  placeholder="Rao"
-                                />
-                            </View>              
-                        </View>
-
-                        <View style={styles.input1}>
-
-                            <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}>Street Address</Text>
-                                <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
-                                  onChangeText={text => setPassword(text)}
-                                  placeholder="Rio"
-                                />
-                            </View>              
-                        </View>
-
-                        <View style={styles.input1}>
-
-                            <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}>Postal Code</Text>
-                                <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
-                                  onChangeText={text => setPassword(text)}
-                                  placeholder="01000"
-                                />
-                            </View>              
-                        </View>
-
-                        <View style={styles.input1}>
-
-                            <View style={styles.inputcontent}>
-                              <Text style={styles.inputtext}>Phone Number</Text>
-                                <TextInput
-                                   style={{width:wp('75%'), height:hp('5%'), alignItems:'center'}}
-                                  onChangeText={text => setPassword(text)}
-                                  placeholder="01000"
-                                />
-                            </View>              
-                        </View>
+                         
 
 
-                        <View style={styles.infotext}>
-                               <Text style={{fontSize:17, color:'grey'}}>Your Choice</Text>                          
-                         </View>
+                       
 
-                      <View style={styles.input3}>
-                            <View style={styles.inputcontent}>
-                                     <Text style={styles.inputtext}>Tell Us What You Want to do</Text>
-                                      <TextInput
-                                           multiline={true}
-                                            onChangeText={text => setPassword(text)}
-                                            placeholder="01000"
-                                      />
-                              </View>
-                      </View>
-
+                    <View style={{alignItems:'center', marginTop:hp('4%')}}>
 
                       <Button title="Register" />
+                    </View>
 
                       <View style={{justifyContent:'center', marginVertical:hp('2%'), marginHorizontal:hp('5%'),}}>
                         <Text style={{textAlign:'center'}}>By Signing in you agree with <Text style={{textDecorationLine:'underline'}}>Privacy Policy</Text> & <Text style={{textDecorationLine:'underline'}}>Terms of Services</Text></Text>
@@ -219,7 +146,6 @@ const styles = StyleSheet.create({
       borderRadius:12,
       marginTop:hp('1%'),
       flexDirection:"row",
-      justifyContent:"space-between"
       },
   
     input3:{
@@ -242,4 +168,4 @@ const styles = StyleSheet.create({
   })
 
 
-  export default Registration;
+  export default UserRegistration;

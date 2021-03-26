@@ -3,12 +3,12 @@ import { View, Text, Image, StyleSheet, ScrollView} from 'react-native'
 import {  Header, Left, Icon, Center, Right, Body, Item, Input, } from 'native-base';
 import { Container, Tab, Tabs } from 'native-base';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import ProductDetailtab1 from './src/ScreenComponents/ProductDetailtab1';
-import ProductDetailAboutTab from './src/ScreenComponents/ProductDetailAboutTab'
-import ProductDetailtab2 from './src/ScreenComponents/ProductDetailtab2';
+import ProductDetailtab1 from '../ScreenComponents/ProductDetailtab1';
+import ProductDetailAboutTab from '../ScreenComponents/ProductDetailAboutTab'
+import ProductDetailtab2 from '../ScreenComponents/ProductDetailtab2';
 
 
-const App=() => {
+const ProductDetail=() => {
   return (
     <ScrollView>
         <Header style={{backgroundColor:'#fff', height:hp('8%')}}>
@@ -25,7 +25,7 @@ const App=() => {
 
       </Header>
 
-      <View style={{backgroundColor:'#fff', borderTopWidth:1, borderTopColor:'lightgrey'}}> 
+            <View style={{backgroundColor:'#fff', borderTopWidth:1, borderTopColor:'lightgrey'}}> 
                   <Tabs locked={true} tabBarUnderlineStyle = {{backgroundColor:"#3FAD72",height:2 }} tabContainerStyle = {{backgroundColor:'transparent',borderWidth:1, borderBottomWidth:1, elevation:0 }}>
                     <Tab heading="Overview" textStyle={{color:"lightgrey", fontWeight:'900'}} tabStyle = {{backgroundColor:"transparent", }} activeTabStyle = {{ backgroundColor:"transparent",}} activeTextStyle = {{color:"#3FAD72ed"}}>
                         <ProductDetailtab1  />
@@ -35,7 +35,7 @@ const App=() => {
                     </Tab>
                    
                   </Tabs>
-                  </View>
+              </View>
                   
                              
     </ScrollView>
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
   
 
  })
-export default App;
+export default ProductDetail;

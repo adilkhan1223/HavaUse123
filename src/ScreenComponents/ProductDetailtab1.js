@@ -7,6 +7,7 @@ import Carousel, {Pagination,  ParallaxImage,} from 'react-native-snap-carousel'
 import Button from '../components/Button';
 import ProductDetailAboutTab from './ProductDetailAboutTab'
 import ProductDetailReviewTab from './ProductDetailReviewTab';
+import ProductDetailAdttionalInformationTab from './ProductDetailAdttionalInformationTab';
 
 const ENTRIES1 = [
     {
@@ -198,7 +199,7 @@ const ProductDetailtab1= () => {
                                             <View><ProductDetailAboutTab  /></View>
                                         </Tab>
                                         <Tab heading="Additional Information" textStyle={{color:"lightgrey",fontWeight:'900'}} tabStyle = {{backgroundColor:"transparent", }} activeTabStyle = {{ backgroundColor:"transparent",}} activeTextStyle = {{color:"#3FAD72ed"}}>
-                                            <View><Text>Information Tab</Text></View>
+                                            <View><ProductDetailAdttionalInformationTab  /></View>
                                         </Tab>
                                         <Tab heading="Reviews" textStyle={{color:"lightgrey",}} tabStyle = {{backgroundColor:"transparent", }} activeTabStyle = {{ backgroundColor:"transparent",}} activeTextStyle = {{color:"#3FAD72ed"}}>
                                             

@@ -2,6 +2,8 @@
   package="com.havause">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
 
     <application
       android:name=".MainApplication"
@@ -12,7 +14,7 @@
       android:theme="@style/AppTheme">
       <meta-data
      android:name="com.google.android.geo.API_KEY"
-     android:value="AIzaSyAshdR1-Het-v1avIY0oKVIjzwN8tfmFlo"/>
+     android:value="AIzaSyCJPr3he5_rBC-3LCd7nsew5L6bFCJ6FJc"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

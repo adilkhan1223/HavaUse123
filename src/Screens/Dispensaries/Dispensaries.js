@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import { View, Text, StyleSheet, Image,FlatList, ScrollView, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, Image,FlatList, ScrollView, TextInput, TouchableOpacity, } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import {  Header, Left, Icon, Card, Right, Body,  } from 'native-base';
 

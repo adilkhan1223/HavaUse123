@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import {  SafeAreaView, Text,View, StyleSheet  } from 'react-native'
+import {  SafeAreaView, Text,View, StyleSheet, ScrollView  } from 'react-native'
 import { Container, Header,  Tab, Tabs, } from 'native-base';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import HeaderWithIcon from '../components/HeaderWithIcon';
 import All from '../ScreenComponents/All'
-const App=() => {
+const Orders=() => {
     return (
-      <Container>
+      <ScrollView style={{backgroundColor:'#FAF8F8'}} >
         <HeaderWithIcon  /> 
         
         <Tabs  tabBarUnderlineStyle = {{backgroundColor:"#3FAD72" , height:1}} tabContainerStyle = {{backgroundColor:'white',borderWidth:1,borderBottomWidth:1, }}>
           <Tab heading="All" tabStyle = {{backgroundColor:"#FFF" }} textStyle={{color:"lightgrey"}} activeTabStyle = {{ backgroundColor:"#FFf"}} activeTextStyle = {{color:"#3FAD72ed"}} >
-              <View style={styles.container1}><All /></View>
+              <View><All /></View>
           </Tab>
           <Tab heading="Completed" textStyle={{color:"lightgrey"}} tabStyle = {{backgroundColor:"#FFF", }} activeTabStyle = {{ backgroundColor:"#FFf",}} activeTextStyle = {{color:"#3FAD72ed"}} >
           <View><Text>Hello</Text></View>
@@ -20,7 +20,7 @@ const App=() => {
           <View><Text>Hello</Text></View>
           </Tab>
         </Tabs>
-      </Container>
+      </ScrollView>
     );
   
 }
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App;
+export default Orders;
